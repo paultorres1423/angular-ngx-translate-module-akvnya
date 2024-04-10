@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" href="#">{{'TITULO' | translate}}</a>
+<select (change)="changeLanguage($event.target.value)">
+  <option value="es">{{'IDIOMAS.ESPANOL' | translate}}</option>
+  <option value="en">{{'IDIOMAS.INGLES' | translate}}</option>
+</select>
+
+</nav>
+
+<p class="text-center">{{'TITULO_IDIOMA_ACTUAL' | translate}}: <strong>{{translate.currentLang | uppercase}}</strong></p>
+
+<app-login></app-login>
